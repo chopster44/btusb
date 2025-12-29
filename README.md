@@ -1,3 +1,13 @@
+## [ FORK ]
+i tried to run this on debian 13 to get a MA530 bluetooth dongle working, but it
+would not work for me. some of the variables have changed since this was made, 
+and the kernel is reported differently on debian to the original user's system.
+so check my changes (`btusb.patch`, `update.sh`) if you want to use this.
+
+the rest of the instructions below will work the same.
+
+***
+
 My patch to fix `hci0: Opcode 0x c77 failed: -56` issue from kernel log and
 `No default controller available` in bluetoothctl. Stuttering audio in bluetooth
 device will also be fixed (in my case) probably because the kernel is using
