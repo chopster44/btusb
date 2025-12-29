@@ -79,3 +79,6 @@ sudo make uninstall
 
 - https://askubuntu.com/questions/791584/bluetooth-not-working-in-ubuntu-16-04-with-0cf33004-atheros-adapter
 - https://gist.github.com/hwchong/8738e100ec4e140bae2cac2894c29d65
+- https://lore.kernel.org/lkml/20250225155825.1504841-1-mprnk@o2.pl/
+i also found that the realtek firmware is not auto-installed on debian, which
+may make this redundant.
