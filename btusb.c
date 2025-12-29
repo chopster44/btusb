@@ -27,7 +27,7 @@
 #include "btrtl.h"
 #include "btmtk.h"
 
-#define VERSION "0.8"
+#define VERSION "0.8~modified"
 
 static bool disable_scofix;
 static bool force_scofix;
@@ -746,6 +746,8 @@ static const struct usb_device_id quirks_table[] = {
 	{ USB_DEVICE(0x2ff8, 0xb011), .driver_info = BTUSB_REALTEK },
 
 	/* Additional Realtek 8761BUV Bluetooth devices */
+        { USB_DEVICE(0x2c4e, 0x0115), .driver_info = BTUSB_REALTEK |
+                                                     BTUSB_WIDEBAND_SPEECH },
 	{ USB_DEVICE(0x2357, 0x0604), .driver_info = BTUSB_REALTEK |
 						     BTUSB_WIDEBAND_SPEECH },
 	{ USB_DEVICE(0x0b05, 0x190e), .driver_info = BTUSB_REALTEK |
