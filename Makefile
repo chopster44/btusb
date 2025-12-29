@@ -3,7 +3,7 @@ KDIR = /lib/modules/$(CURRENT)/build
 PWD = $(shell pwd)
 MODDIR = /lib/modules/$(CURRENT)/kernel/drivers/bluetooth
 MODNAME = btusb
-MODVER = 1.0
+MODVER = 0.8~modified
 MODNAMELONG = $(MODNAME)/$(MODVER)
 
 obj-m = btusb.o
